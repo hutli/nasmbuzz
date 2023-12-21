@@ -20,6 +20,6 @@ Lib.c is dynamically linked so `/lib64/ld-linux-x86-64.so.2` is also required on
 
 ## Usage
 
-Wanna count to more than 100? Change the constant on line 53 in `fizzbuzz.asm`.
+Wanna count to more than 100000? Change the constant on line 55 in `fizzbuzz.asm`.
 
 "But I want to be able to set that number in `argv`!" - I take pull-requests ;)

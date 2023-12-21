@@ -52,7 +52,7 @@ _while:
     add rax, 1                    ; Add rax and 1 and store the result in rax
     mov QWORD [counter], rax      ; Load new value into counter
 
-    cmp rax, 101                  ; Check if the loop counter has reached 101
+    cmp rax, 100001               ; Check if the loop counter has reached 100001
     jne main_loop                 ; If not, jump back to continue the loop
 
 ; Exit the program
