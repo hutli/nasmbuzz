@@ -18,14 +18,14 @@ _start:
 main_loop:
     mov QWORD [fizz_or_buzz], 0   ; Reset fizz/buzz check
 
-    ; Print "Fizz" if counter % 5 == 1
+    ; Print "Fizz" if counter % 5 == 0
     lea rdi, [fizz]               ; Copy "Fizz" poniter as 1st argument (print string)
     mov rsi, [counter]            ; Copy counter as 2nd argument (dividend)
     mov rdx, 5                    ; Copy 5 as 3rd argument (divisor)
     xor rax, rax                  ; Zero out rax (vararg function calling convention)
     call div_and_print
     
-    ; Print "Buzz" if counter % 3 == 1
+    ; Print "Buzz" if counter % 3 == 0
     lea rdi, [buzz]               ; Copy "Buzz" poniter as 1st argument (print string)
     mov rsi, [counter]            ; Copy counter as 2nd argument (dividend)
     mov rdx, 3                    ; Copy 3 as 3rd argument (divisor)
