@@ -1,3 +1,5 @@
+BITS 64
+
 section .rodata
     fizz db 'Fizz', 0             ; String "Fizz" followed by null terminator
     buzz db 'Buzz', 0             ; String "Buzz" followed by null terminator
